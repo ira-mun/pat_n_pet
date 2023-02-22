@@ -1,0 +1,209 @@
+.link{
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-right: 53px;
+    justify-content: center;
+}
+.container{
+    background-color:  #dad5ca;
+    border: #b4aea0;
+    color: black;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    transition: all .1s ease-in-out;
+}
+.container:hover {
+    background-color: #b4aea0;
+    font-size: 30px;
+    transform: scale(1.1);
+}
+.cat{
+    position: relative;
+    background-image: linear-gradient(rgb(46, 44, 44),rgb(58, 58, 58),rgb(58, 58, 58));
+    height: 15vmin;
+    width: 10vmin;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.cat::before{
+    content: '';
+    position: absolute;
+    background: rgb(58, 58, 58);
+    height: 10vmin;
+    width: 10vmin;
+    border-radius: 90%;
+    left: 0vmin;
+    top:-7vmin;
+}
+.container:hover .cat::before{
+    top: -6.6vmin;
+    height: 9vmin;
+}
+
+.cat::after{
+    content: '';
+    position: absolute;
+    background: rgb(58, 58, 58);
+    height: 11vmin;
+    width: 14vmin;
+    border-radius: 50%;
+    top: 6vmin;
+    left:1vmin;
+    transform: rotate(-8deg);
+}
+.ears{
+    position: relative;
+    height: 0;
+    width:0;
+    top: -9.5vmin;
+    left: -0.9vmin;
+    transform: rotate(-18deg);
+    border-left: 2vmin solid transparent;
+    border-right: 3vmin solid transparent;
+    border-bottom: 6vmin solid rgb(58, 58, 58);
+}
+.container:hover .ears{
+    top: -8.8vmin;
+}
+
+.ears::after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 2.5vmin;
+    left: 5vmin;
+    transform: rotate(42deg);
+    border-left: 2vmin solid transparent;
+    border-right: 2.9vmin solid transparent;
+    border-bottom: 6vmin solid rgb(58, 58, 58);
+}
+.eyes{
+    position: relative;
+    background: rgb(151, 178, 190);
+    height: 3vmin;
+    width: 3vmin;
+    border-radius: 90% 90% 90% 50%;
+    top: -4vmin;
+    left: 1.1vmin;
+}
+.eyes::before{
+    content: '';
+    position: absolute;
+    background: rgb(151, 178, 190);
+    height: 3vmin;
+    width: 3vmin;
+    border-radius:  90% 90% 50% 90%;
+    left: -5vmin;
+}
+.eyes::after{
+    content: '';
+    position: absolute;
+    background: black;
+    height: 2vmin;
+    width: 1.5vmin;
+    border-radius: 50%;
+    top: 0.7vmin;
+    left: 0.6vmin;
+    box-shadow: -4.7vmin 0;
+}
+.container:hover .eyes::after{
+    top: 0.5vmin;
+    height: 2.5vmin;
+    width: 2vmin;
+}
+
+.bottom{
+    position:relative;
+    background: rgb(58, 58, 58);
+    height:11vmin;
+    width: 3vmin;
+    border-radius: 30%;
+}
+
+.bottom::before{
+    content:'';
+    position: absolute;
+    background: rgb(58, 58, 58);
+    height:3vmin;
+    width:4vmin;
+    border-radius: 90% 50% 50% 50%;
+    top: 8vmin;
+    left: -1vmin;
+    box-shadow: 5vmin 1.1vmin;
+    color: rgb(58, 58, 58);
+}
+.container:hover .bottom::before{
+    transform: rotate(10deg);
+}
+.bottom::after{
+    content:'';
+    position: absolute;
+    background: transparent;
+    height:4vmin;
+    width:10vmin;
+    border-radius: 50%;
+    top: 7.6vmin;
+    left: 9vmin;
+    transform: rotate(10deg);
+    border-top: 2vmin solid rgb(58, 58, 58);
+    border-right: 2vmin solid rgb(58, 58, 58);
+}
+.container:hover .bottom::after{
+    transform: scaleY(-1);
+    top: 3vmin;
+
+}
+.nose{
+    content:'';
+    position: absolute;
+    background: pink;
+    height: 0.5vmin;
+    width: 1vmin;
+    top: -1vmin;
+    left: 4.5vmin;
+    border-radius: 50%;
+}
+.ball{
+    position: relative;
+    background: rgb(186, 90, 90);
+    height: 6vmin;
+    width: 6vmin;
+    border-radius: 50%;
+    top: 6vmin;
+    left: 4vmin;
+    border-right: 0.8vmin solid rgb(141, 69, 69);
+    display: flex;
+    z-index: 1;
+}
+.container:hover .ball{
+    top: 6vmin;
+    left: 6vmin;
+}
+
+.shadow {
+    position: relative;
+    margin-left: -20vmin;
+    height: 6vmin;
+    width: 25vmin;
+    background: #000000;
+    opacity: 30%;
+    border-radius: 50%;
+    top: 10vmin;
+    left: 20vmin;
+  }
+  @media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .link {
+    height: auto;
+  }
+}

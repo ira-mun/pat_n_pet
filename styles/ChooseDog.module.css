@@ -1,0 +1,239 @@
+.link{
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-right: 53px;
+    justify-content: center;
+}
+.container{
+    background-color:  #dad5ca;
+    border: #b4aea0;
+    color: black;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    transition: all .1s ease-in-out;
+}
+.container:hover {
+    background-color: #b4aea0;
+    font-size: 30px;
+    transform: scale(1.1);
+}
+.dog{
+    position: relative;
+    background-image: linear-gradient(rgb(155, 108, 20),rgb(163, 112, 17),rgb(163, 112, 17));
+    height: 15vmin;
+    width: 10vmin;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.dog::before{
+    content: '';
+    position: absolute;
+    background: rgb(163, 112, 17);
+    height: 10vmin;
+    width: 10vmin;
+    border-radius: 90%;
+    left: 0vmin;
+    top:-7vmin;
+}
+.dog::after{
+    content: '';
+    position: absolute;
+    background: rgb(163, 112, 17);
+    height: 11vmin;
+    width: 14vmin;
+    border-radius: 30%;
+    top: 6vmin;
+    left: 0vmin;
+}
+.ears{
+    border-left: 2vmin solid transparent;
+    border-right: 3vmin solid transparent;
+    border-bottom: 6vmin solid transparent;
+}
+.ear1{
+    position: absolute;
+    background:  rgb(75, 51, 7);
+    height: 8vmin;
+    width: 3vmin;
+    border-radius: 100%;
+    top: -7vmin;
+    left: -1vmin;
+    transform: rotate(30deg);
+    z-index: -1;
+}
+.container:hover .ear1{
+    transform: rotate(40deg);
+}
+.ear2{
+    position: absolute;
+    background:  rgb(75, 51, 7);
+    height: 8vmin;
+    width: 3vmin;
+    border-radius: 100%;
+    top: -7vmin;
+    left: 8vmin;
+    transform: rotate(-29deg);
+    z-index: 1;
+}
+.container:hover .ear2{
+    transform: rotate(-40deg);
+}
+
+.eyes{
+    position: relative;
+    background: rgb(210, 203, 175);
+    height: 3vmin;
+    width: 3vmin;
+    border-radius: 100%;
+    top: -4vmin;
+    left: 0vmin;
+}
+.container:hover .eyes{
+    left: 1vmin;
+}
+.eyes::before{
+     content: '';
+    position: absolute;
+    background:  rgb(210, 203, 175);
+    height: 3vmin;
+    width: 4vmin;
+    border-radius: 50%;
+    top: 2.7vmin;
+    left: -3.2vmin;
+}
+.eyes::after{
+    content: '';
+    position: absolute;
+    background: black;
+    height: 2vmin;
+    width: 1.5vmin;
+    border-radius: 50%;
+    top: 0.7vmin;
+    left: 0.4vmin;
+    box-shadow: -4.1vmin 0;
+}
+.bottom{
+    position:relative;
+    background: rgb(163, 112, 17);
+    height:11vmin;
+    width: 3vmin;
+    border-radius: 30%;
+}
+
+.bottom::before{
+    content:'';
+    position: absolute;
+    background: rgb(163, 112, 17);
+    height:3vmin;
+    width:4vmin;
+    border-radius: 90% 50% 50% 50%;
+    top: 8vmin;
+    left: -1vmin;
+    box-shadow: 5vmin 1.1vmin;
+    color: rgb(163, 112, 17);
+}
+
+.container:hover .bottom::before{
+    transform: rotate(10deg);
+}
+
+.bottom::after{
+    content:'';
+    position: absolute;
+    background: transparent;
+    height:4vmin;
+    width:10vmin;
+    border-radius: 50%;
+    top: 7.6vmin;
+    left: 9vmin;
+    transform: rotate(10deg);
+    border-top: 2vmin solid rgb(163, 112, 17);
+}
+.container:hover .bottom::after{
+    transform: rotate(-20deg);
+    top: 6.5vmin;
+
+}
+.nose{
+    content:'';
+    position: absolute;
+    background: rgb(0, 0, 0);
+    height: 1vmin;
+    width: 2vmin;
+    top: -1vmin;
+    left: 2.3vmin;
+    border-radius: 50%;
+}
+.container:hover .nose{
+    left: 3.8vmin;
+}
+.container:hover .bone{
+    transform: rotate(20deg);
+
+}
+.bone{
+    position: relative;
+    background: rgb(232, 224, 224);
+    height: 2vmin;
+    width: 5vmin;
+    top: 8.8vmin;
+    left: 5vmin;
+    transform: rotate(-13deg);
+    border-bottom: 0.5vmin solid rgb(160, 154, 154);
+    display: flex;
+    z-index: 1;
+}
+.bone::before{
+    content:'';
+    position: absolute;
+    background: rgb(232, 224, 224);
+    height:2vmin;
+    width:2vmin;
+    border-radius: 50%;
+    top: 0.8vmin;
+    left: 4vmin;
+}
+.bone::after{
+    content:'';
+    position: absolute;
+    background: rgb(232, 224, 224);
+    height:2vmin;
+    width:2vmin;
+    border-radius: 50%;
+    top: -0.8vmin;
+    left: 4vmin;
+}
+.boneDetails{
+    position: relative;
+    background: rgb(232, 224, 224);
+    height:2vmin;
+    width:2vmin;
+    border-radius: 50%;
+    top: -0.8vmin;
+    left: -1vmin;
+}
+.boneDetails::after{
+    content:'';
+    position: absolute;
+    background: rgb(232, 224, 224);
+    height:2vmin;
+    width:2vmin;
+    border-radius: 50%;
+    top: 1.4vmin;
+    left: 0.1vmin;
+}
+.shadow {
+    position: relative;
+    margin-left: -20vmin;
+    height: 6vmin;
+    width: 25vmin;
+    background: #000000;
+    opacity: 30%;
+    border-radius: 50%;
+    top: 10vmin;
+    left: 20vmin;
+  }

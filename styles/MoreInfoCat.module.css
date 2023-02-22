@@ -1,0 +1,74 @@
+.container{
+    font-family: "Bellota Text", sans-serif;
+    align-items: center;
+}
+.item{
+    margin-left:-40px;
+    align-items: center;
+}
+.list{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin:0;
+}
+.align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hideInfo {
+    display: none;
+  }
+.showInfo {
+    display: block;
+    margin: 20px 40px 20px 40px;
+    font-size: 20px;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+.shortenHistory, .shortenCare,
+.shortenHealth, .shortenDiet{
+    height: 570px;
+    width: 100%;
+    transition: all .8s ease-in-out;
+    
+    background-color: #b2ada1;
+} 
+.shortenHistory:hover, .shortenCare:hover,
+.shortenHealth:hover, .shortenDiet:hover{
+    filter: brightness(115%);
+}
+
+.widenHistory, .widenCare,
+.widenHealth, .widenDiet{
+    width: 500%;
+    height: 570px;
+    transition: all .8s ease-in-out;
+    background-color: #dad5ca;
+} 
+
+.largeHistoryTitle, .largeCareTitle,
+.largeHealthTitle, .largeDietTitle{
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: lighter;
+    transition: all .8s ease-in-out;
+}
+
+.smallHistoryTitle, .smallCareTitle,
+.smallHealthTitle, .smallDietTitle{
+    font-size: 30px;
+    font-weight: lighter;
+    transition: all .8s ease-in-out;
+
+}
+.dot{
+    color: transparent;
+}
