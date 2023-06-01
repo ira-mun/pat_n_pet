@@ -27,7 +27,6 @@ const Eyes = () => {
   function getAngle(from, to) {
     const radians = Math.atan2(to.y - from.y, to.x - from.x);
     const degree = radians * (180 / Math.PI);
-    console.log(JSON.stringify({ from, to, degree }));
     // added value depends on the arc image to rotate and which part of the arc should correspond to degree 0
     return degree + 135;
   }
